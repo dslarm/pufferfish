@@ -6,6 +6,8 @@
 
 ## What is Puffaligner <a name="puffaligner"></a>
 
+### Important note: To obtain alignments with the cigar strings (Puffaligner), please ensure you switch to the [`cigar-strings`](https://github.com/COMBINE-lab/pufferfish/tree/cigar-strings) branch before compiling the code.
+
 Puffaligner is a fast, sensitive and accurate aligner built on top of the [Pufferfish index](#whatis).
 It tries to occupy a less-well-explored position in the space of read aligners, typically 
 using more memory than BWT-based approaches (unless there are _highly_ repetitive references), but
@@ -62,6 +64,11 @@ To build the pufferfish/puffaligner do the following,
 > cd build
 > cmake ../
 > make
+```
+
+### Important note: To obtain alignments with the cigar strings (Puffaligner), please ensure you switch to the [`cigar-strings`](https://github.com/COMBINE-lab/pufferfish/tree/cigar-strings) branch before compiling the code:
+```
+> git checkout cigar-strings
 ```
 
 ## How to Use <a name="using"></a>
